@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: #e8eff5;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	margin: 0;
+}
+h1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #525252;
+}
+
+.btn-container{
+	display: flex;
+}
+.btn{
+	background: #e8eff5;
+	height: 80px;
+	width: 80px;
+	margin: 0 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 700ms;
+	box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff,
+				inset 4px 4px 8px rgba(209, 217, 230, 0.2),
+				inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.btn i{
+	font-size: 40px;
+	color: #727272;
+	transition: all 700ms;
+}
+.btn:hover i{
+	transform: scale(0.90);
+}
+.btn:hover{
+	box-shadow: 7px 2px 18px #bbcfda, -4px -4px 13px #fff,
+				inset 4px 4px 16px rgba(209, 217, 230, 0.8),
+				inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+	transform: translateY(2px);
+}
+
+@media only screen and (max-width: 600px){
+
+	@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+	body{
+	background: #232324;
+	}
+
+	h1{
+	font-family: 'Viaoda Libre', cursive;
+	color: #bbcfda;
+	font-size: 16px;
+	}
+
+	.btn-container{
+	display: flex;
+	flex-direction: column; 
+}
+	.btn{
+	margin: 16px 0;
+	background: #232324;
+	box-shadow: 7px 7px 8px #595959, -4px -4px 13px #000,
+				inset 4px 4px 8px rgba(89, 89, 89, 0.2),
+				inset -8px -8px 8px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.btn:hover{
+	box-shadow: 7px 2px 18px #595959, -4px -4px 13px #000,
+				inset 4px 4px 14px rgba(89, 89, 89, 0.8),
+				inset -8px -8px 8px rgba(0, 0, 0, 0.1);
+	transform: translateY(2px);
+}
+.btn i{
+	;
+	color: #bbcfda;
+	
+}
+}
